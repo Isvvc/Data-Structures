@@ -38,7 +38,7 @@ class LRUCache:
         while self.dll.length > self.limit:
             node_to_remove = self.dll.tail
             for key_to_remove in self.storage:
-                # Findt he dictionary value to remove
+                # Find the dictionary value to remove
                 if self.storage[key_to_remove] is node_to_remove:
                     del self.storage[key_to_remove]
                     break
